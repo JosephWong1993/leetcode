@@ -3,6 +3,8 @@ package com.wong.Example_00190;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.math.BigInteger;
+
 import static org.junit.Assert.*;
 
 public class ReverseBitsTest {
@@ -15,6 +17,13 @@ public class ReverseBitsTest {
     
     @Test
     public void reverseBits_1() {
-        System.out.println(reverseBits.reverseBits_1(43261596));
+        int n = 964176192;
+        System.out.println(n + ":" + reverseBits.reverseBits_1(n));
+    }
+    
+    @Test
+    public void reverseBits_2() {
+        int n= 43261596;
+        System.out.println(n + ":" + reverseBits.reverseBits_2(n));
     }
 }
