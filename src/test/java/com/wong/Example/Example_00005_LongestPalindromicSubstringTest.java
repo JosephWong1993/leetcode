@@ -1,16 +1,15 @@
-package com.wong.Example_00005;
+package com.wong.Example;
 
+import com.wong.Example.Example_00005_LongestPalindromicSubstring;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class LongestPalindromicSubstringTest {
-    private LongestPalindromicSubstring instance;
+public class Example_00005_LongestPalindromicSubstringTest {
+    private Example_00005_LongestPalindromicSubstring instance;
     
     @Before
     public void setUp() throws Exception {
-        instance = new LongestPalindromicSubstring();
+        instance = new Example_00005_LongestPalindromicSubstring();
     }
     
     @Test

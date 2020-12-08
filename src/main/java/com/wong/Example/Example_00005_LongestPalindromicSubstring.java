@@ -1,9 +1,9 @@
-package com.wong.Example_00005;
+package com.wong.Example;
 
 /**
  * 5. 最长回文子串
  */
-public class LongestPalindromicSubstring {
+public class Example_00005_LongestPalindromicSubstring {
     /**
      * 方法一：动态规
      */

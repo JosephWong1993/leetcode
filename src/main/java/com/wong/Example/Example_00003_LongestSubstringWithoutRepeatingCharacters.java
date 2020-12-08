@@ -1,4 +1,4 @@
-package com.wong.Example_00003;
+package com.wong.Example;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * 3. 无重复字符的最长子串
  */
-public class LongestSubstringWithoutRepeatingCharacters {
+public class Example_00003_LongestSubstringWithoutRepeatingCharacters {
     /**
      * 方法一：滑动窗口
      */
