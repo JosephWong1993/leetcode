@@ -1,11 +1,14 @@
-package com.wong.Example_00013;
+package com.wong.Example;
+
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 
 /**
  * 13. 罗马数字转整数
  */
-public class RomanToInteger {
+@Component
+public class Example_00013_RomanToInteger {
     public int romanToInt(String s) {
         HashMap<String, Integer> map = new HashMap<String, Integer>();
         map.put("I", 1);

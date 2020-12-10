@@ -1,4 +1,4 @@
-package com.wong.Utils;
+package com.wong.model;
 
 public class ListNode {
     public int val;

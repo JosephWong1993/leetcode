@@ -1,6 +1,6 @@
 package com.wong.Example;
 
-import com.wong.Utils.ListNode;
+import com.wong.model.ListNode;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

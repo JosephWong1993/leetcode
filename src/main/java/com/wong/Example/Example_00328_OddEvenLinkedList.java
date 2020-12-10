@@ -1,6 +1,6 @@
 package com.wong.Example;
 
-import com.wong.Utils.ListNode;
+import com.wong.model.ListNode;
 import org.springframework.stereotype.Component;
 
 /**
