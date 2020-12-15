@@ -1,10 +1,10 @@
-package com.wong.Example_00020;
+package com.wong.Example;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class ValidParentheses {
+public class Example_00020_ValidParentheses {
     
     /**
      * 方法一：栈

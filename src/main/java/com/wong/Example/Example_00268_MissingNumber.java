@@ -1,4 +1,4 @@
-package com.wong.Example_00268;
+package com.wong.Example;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * 268. 丢失的数字
  */
-public class MissingNumber {
+public class Example_00268_MissingNumber {
     /**
      * 方法一：排序
      */

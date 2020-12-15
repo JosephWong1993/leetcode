@@ -1,4 +1,4 @@
-package com.wong.Example_00073;
+package com.wong.Example;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * 73. 矩阵置零
  */
-public class SetMatrixZeroes {
+public class Example_00073_SetMatrixZeroes {
     
     /**
      * 方法 1：额外存储空间方法

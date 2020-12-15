@@ -1,9 +1,9 @@
-package com.wong.Example_00461;
+package com.wong.Example;
 
 /**
  * 461. 汉明距离
  */
-public class HammingDistance {
+public class Example_00461_HammingDistance {
     /**
      * 方法一：内置位计数功能
      */

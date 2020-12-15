@@ -1,4 +1,4 @@
-package com.wong.Example_00334;
+package com.wong.Example;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 @Component
 @Scope("singleton")
-public class IncreasingTripletSubsequence {
+public class Example_00334_IncreasingTripletSubsequence {
     /**
      * 方法一：双指针
      */

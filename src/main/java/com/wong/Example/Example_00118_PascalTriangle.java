@@ -1,4 +1,4 @@
-package com.wong.Example_00118;
+package com.wong.Example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 118. 杨辉三角
  */
-public class PascalTriangle {
+public class Example_00118_PascalTriangle {
     /**
      * 方法：动态规划
      */

@@ -1,18 +1,17 @@
-package com.wong.Example_00334;
+package com.wong.Example;
 
+import com.wong.Example.Example_00334_IncreasingTripletSubsequence;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:ApplicationContext.xml")
-public class IncreasingTripletSubsequenceTest {
+public class Example_00334_IncreasingTripletSubsequenceTest {
     @Autowired
-    private IncreasingTripletSubsequence instance;
+    private Example_00334_IncreasingTripletSubsequence instance;
     
     @Test
     public void increasingTriplet_1() {

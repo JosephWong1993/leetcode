@@ -1,12 +1,13 @@
-package com.wong.Example_00461;
+package com.wong.Example;
 
+import com.wong.Example.Example_00461_HammingDistance;
 import junit.framework.TestCase;
 
-public class HammingDistanceTest extends TestCase {
-    private HammingDistance instance;
+public class Example_00461_HammingDistanceTest extends TestCase {
+    private Example_00461_HammingDistance instance;
     
     public void setUp() throws Exception {
-        instance = new HammingDistance();
+        instance = new Example_00461_HammingDistance();
         super.setUp();
     }
     

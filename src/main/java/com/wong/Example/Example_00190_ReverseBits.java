@@ -1,9 +1,9 @@
-package com.wong.Example_00190;
+package com.wong.Example;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ReverseBits {
+public class Example_00190_ReverseBits {
     /**
      * 方法一：逐位颠倒
      */

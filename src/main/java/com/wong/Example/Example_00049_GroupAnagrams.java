@@ -1,4 +1,4 @@
-package com.wong.Example_00049;
+package com.wong.Example;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 49. 字母异位词分组
  */
-public class GroupAnagrams {
+public class Example_00049_GroupAnagrams {
     
     /**
      * 方法一：排序数组分类

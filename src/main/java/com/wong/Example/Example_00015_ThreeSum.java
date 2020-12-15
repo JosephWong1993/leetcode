@@ -1,4 +1,4 @@
-package com.wong.Example_00015;
+package com.wong.Example;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 15. 三数之和
  */
-public class ThreeSum {
+public class Example_00015_ThreeSum {
     /**
      * 方法一：排序 + 双指针
      */

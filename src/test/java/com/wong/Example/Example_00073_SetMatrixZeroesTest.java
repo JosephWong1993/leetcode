@@ -1,25 +1,24 @@
-package com.wong.Example_00073;
+package com.wong.Example;
 
+import com.wong.Example.Example_00073_SetMatrixZeroes;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
-
-public class SetMatrixZeroesTest {
+public class Example_00073_SetMatrixZeroesTest {
     
-    private SetMatrixZeroes setMatrixZeroes;
+    private Example_00073_SetMatrixZeroes instance;
     
     @Before
     public void setUp() throws Exception {
-        setMatrixZeroes = new SetMatrixZeroes();
+        instance = new Example_00073_SetMatrixZeroes();
     }
     
     @Test
     public void setZeroes_1() {
         int[][] ary = new int[][] { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
-        setMatrixZeroes.setZeroes_1(ary);
+        instance.setZeroes_1(ary);
         for (int[] row : ary) {
             System.out.println(Arrays.toString(row));
         }
@@ -28,7 +27,7 @@ public class SetMatrixZeroesTest {
     @Test
     public void setZeroes_2() {
         int[][] ary = new int[][] { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
-        setMatrixZeroes.setZeroes_2(ary);
+        instance.setZeroes_2(ary);
         for (int[] row : ary) {
             System.out.println(Arrays.toString(row));
         }

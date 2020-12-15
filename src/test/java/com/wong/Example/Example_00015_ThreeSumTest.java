@@ -1,19 +1,16 @@
-package com.wong.Example_00015;
+package com.wong.Example;
 
+import com.wong.Example.Example_00015_ThreeSum;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
-import static org.junit.Assert.*;
-
-public class ThreeSumTest {
+public class Example_00015_ThreeSumTest {
     
-    private ThreeSum instance;
+    private Example_00015_ThreeSum instance;
     
     @Before
     public void setUp() throws Exception {
-        instance = new ThreeSum();
+        instance = new Example_00015_ThreeSum();
     }
     
     @Test
