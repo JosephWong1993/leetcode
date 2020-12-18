@@ -1,5 +1,7 @@
 package com.wong.Example;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.Map;
  * 17. 电话号码的字母组合
  * https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
  */
+@Component
 public class Example_00017_LetterCombinationsOfPhoneNumber {
     /**
      * 方法一：回溯
@@ -47,7 +50,7 @@ public class Example_00017_LetterCombinationsOfPhoneNumber {
                 combination.deleteCharAt(index);
             }
         } else {
-            combinations.add(combinations.toString());
+            combinations.add(combination.toString());
         }
     }
 }
