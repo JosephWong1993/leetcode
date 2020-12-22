@@ -42,8 +42,7 @@ public class Example_00046_Permutations {
     }
     
     /**
-     * @param nums
-     * @return
+     * 方法二：回溯算法
      */
     public List<List<Integer>> permute_2(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
