@@ -1,4 +1,4 @@
-package com.wong.Example;
+package com.wong.example.example_00001_00100;
 
 import com.wong.model.TreeNode;
 import org.springframework.stereotype.Component;

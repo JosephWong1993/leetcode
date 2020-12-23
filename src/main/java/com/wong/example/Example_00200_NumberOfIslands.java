@@ -1,4 +1,4 @@
-package com.wong.Example;
+package com.wong.example;
 
 import java.util.LinkedList;
 import java.util.Queue;

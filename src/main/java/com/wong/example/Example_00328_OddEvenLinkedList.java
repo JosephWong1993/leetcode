@@ -1,4 +1,4 @@
-package com.wong.Example;
+package com.wong.example;
 
 import com.wong.model.ListNode;
 import org.springframework.stereotype.Component;

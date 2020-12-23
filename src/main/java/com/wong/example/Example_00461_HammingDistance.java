@@ -1,4 +1,4 @@
-package com.wong.Example;
+package com.wong.example;
 
 /**
  * 461. 汉明距离

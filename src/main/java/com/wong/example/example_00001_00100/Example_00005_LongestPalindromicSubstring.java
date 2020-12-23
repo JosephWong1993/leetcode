@@ -1,4 +1,4 @@
-package com.wong.Example;
+package com.wong.example.example_00001_00100;
 
 /**
  * 5. 最长回文子串
