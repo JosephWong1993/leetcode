@@ -10,6 +10,9 @@ import java.util.List;
  * https://leetcode-cn.com/problems/merge-intervals/
  */
 public class Example_00056_MergeIntervals {
+    /**
+     * 方法一：二分搜索
+     */
     public int[][] merge(int[][] intervals) {
         if (intervals.length == 0) {
             return new int[0][2];
