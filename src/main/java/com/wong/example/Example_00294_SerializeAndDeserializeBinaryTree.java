@@ -57,6 +57,52 @@ public class Example_00294_SerializeAndDeserializeBinaryTree {
     //endregion
 
     //region 方法二：括号表示编码 + 递归下降解码
-    // TODO：需要继续学习
+    // Encodes a tree to a single string.
+    public String serialize_2(TreeNode root) {
+        if (root == null) {
+            return "X";
+        }
+        String l = "(" + serialize_2(root.left) + ")";
+        String r = "(" + serialize_2(root.right) + ")";
+        return l + root.val + r;
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize_2(String data) {
+        int[] ptr = {0};
+        return parse(data, ptr);
+    }
+
+    private TreeNode parse(String data, int[] ptr) {
+        if (data.charAt(ptr[0]) == 'X') {
+            ptr[0]++;
+            return null;
+        }
+        TreeNode cur = new TreeNode(0);
+        cur.left = parseSubtree(data, ptr);
+        cur.val = parseInt(data, ptr);
+        cur.right = parseSubtree(data, ptr);
+        return cur;
+    }
+
+    private TreeNode parseSubtree(String data, int[] ptr) {
+        ptr[0]++;   //跳过左括号
+        TreeNode subtree = parse(data, ptr);
+        ptr[0]++;   //跳过右括号
+        return subtree;
+    }
+
+    private int parseInt(String data, int[] ptr) {
+        int x = 0, sgn = 1;
+        //判断是否为负值
+        if (!Character.isDigit(data.charAt(ptr[0]))) {
+            sgn = -1;
+            ptr[0]++;
+        }
+        while (Character.isDigit(data.charAt(ptr[0]))) {
+            x = x * 10 + (data.charAt(ptr[0]++) - '0');
+        }
+        return sgn * x;
+    }
     //endregion
 }
