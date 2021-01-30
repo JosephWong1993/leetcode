@@ -1,4 +1,4 @@
-package com.wong.example;
+package com.wong.example.example_00101_00200;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;

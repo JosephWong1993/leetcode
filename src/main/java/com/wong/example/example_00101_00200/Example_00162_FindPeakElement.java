@@ -1,4 +1,4 @@
-package com.wong.example;
+package com.wong.example.example_00101_00200;
 
 /**
  * 162. 寻找峰值
