@@ -52,4 +52,6 @@ public class Example_00621_TaskScheduler {
         }
         return time;
     }
+
+    //TODO:方法二：构造
 }
