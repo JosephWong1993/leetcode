@@ -4,9 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Example_00200_NumberOfIslands {
-    /**
-     * 方法一：深度优先搜索
-     */
+    //region 方法一：深度优先搜索
     public int numIslands_1(char[][] grid) {
         if (grid == null || grid.length == 0) {
             return 0;
@@ -38,6 +36,7 @@ public class Example_00200_NumberOfIslands {
         dfs(grid, r, c - 1);
         dfs(grid, r, c + 1);
     }
+    //endregion
     
     /**
      * 方法二：广度优先搜索
@@ -85,4 +84,6 @@ public class Example_00200_NumberOfIslands {
         }
         return islandsNum;
     }
+    
+    //TODO：方法三：并查集
 }
