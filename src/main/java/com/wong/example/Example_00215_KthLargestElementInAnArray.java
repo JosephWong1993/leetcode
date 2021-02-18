@@ -12,9 +12,7 @@ import java.util.Random;
 public class Example_00215_KthLargestElementInAnArray {
     private Random random = new Random();
 
-    /**
-     * 方法一：基于快速排序的选择方法
-     */
+    //region 方法一：基于快速排序的选择方法
     public int findKthLargest_1(int[] nums, int k) {
         return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
@@ -51,43 +49,9 @@ public class Example_00215_KthLargestElementInAnArray {
         a[i] = a[j];
         a[j] = temp;
     }
+    //endregion
 
-    //TODO: 没懂
-    /**
-     * 方法二：基于堆排序的选择方法
-     */
-    public int findKthLargest_2(int[] nums, int k) {
-        int heapSize = nums.length;
-        buildMaxHeap(nums, heapSize);
-        for (int i = nums.length - 1; i >= nums.length - k; --i) {
-            swap(nums, 0, i);
-            --heapSize;
-            maxHeapify(nums, 0, heapSize);
-        }
-        return nums[0];
-    }
-
-    private void buildMaxHeap(int[] a, int heapSize) {
-        for (int i = heapSize / 2; i >= 0; --i) {
-            maxHeapify(a, i, heapSize);
-        }
-    }
-
-    private void maxHeapify(int[] a, int i, int heapSize) {
-        int l = i * 2 + 1;
-        int r = i * 2 + 2;
-        int largest = i;
-        if (l < heapSize && a[l] > a[largest]) {
-            largest = l;
-        }
-        if (r < heapSize && a[r] > a[largest]) {
-            largest = r;
-        }
-        if (largest != i) {
-            swap(a, i, largest);
-            maxHeapify(a, largest, heapSize);
-        }
-    }
+    //TODO: 方法二：基于堆排序的选择方法
 
     /**
      * 方法三：基于优先队列的选择方法
