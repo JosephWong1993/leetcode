@@ -3,6 +3,8 @@ package com.wong.example;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 279. 完全平方数
@@ -70,4 +72,32 @@ public class Example_00279_PerfectSquares {
     }
     
     //TODO：方法三：贪心枚举
+    public int numSquares_3(int n) {
+        Set<Integer> square_nums = new HashSet<>();
+        for (int i = 1; i * i <= n; ++i) {
+            square_nums.add(i * i);
+        }
+        
+        int count = 1;
+        while (count <= n) {
+            if (is_divided_by(square_nums, n, count)) {
+                return count;
+            }
+            count++;
+        }
+        return count;
+    }
+    
+    private boolean is_divided_by(Set<Integer> square_nums, int n, int count) {
+        if (count == 1) {
+            return square_nums.contains(n);
+        }
+        
+        for (Integer square : square_nums) {
+            if (is_divided_by(square_nums, n - square, count - 1)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
