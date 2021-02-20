@@ -10,7 +10,37 @@ import java.util.Arrays;
  */
 @Component
 public class Example_00279_PerfectSquares {
-    //TODO：方法一：暴力枚举法 [超出时间限制]
+    //region 方法一：暴力枚举法 [超出时间限制]
+    public int numSquares_1(int n) {
+        //预先计算可能的平方数
+        int max_square_index = (int) Math.sqrt(n) + 1;
+        int square_nums[] = new int[max_square_index];
+        for (int i = 1; i < max_square_index; ++i) {
+            square_nums[i] = i * i;
+        }
+        return minNumSquares(square_nums, n);
+    }
+    
+    private int minNumSquares(int[] square_nums, int k) {
+        for (int i = 0; i < square_nums.length; i++) {
+            if (k == square_nums[i]) {
+                return 1;
+            }
+        }
+        
+        int min_num = Integer.MAX_VALUE;
+        
+        for (int i = 1; i < square_nums.length; ++i) {
+            if (k < square_nums[i]) {
+                break;
+            }
+            
+            int new_num = minNumSquares(square_nums, (k - square_nums[i])) + 1;
+            min_num = Math.min(min_num, new_num);
+        }
+        return min_num;
+    }
+    //endregion
     
     /**
      * 方法二：动态规划
@@ -38,4 +68,6 @@ public class Example_00279_PerfectSquares {
         }
         return dp[n];
     }
+    
+    //TODO：方法三：贪心枚举
 }

@@ -14,6 +14,6 @@ class Example_00279_PerfectSquaresTest {
     
     @Test
     void numSquares() {
-        System.out.println(instance.numSquares_2(1));
+        System.out.println(instance.numSquares_1(12));
     }
 }
