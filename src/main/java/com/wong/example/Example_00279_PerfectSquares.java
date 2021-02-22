@@ -2,8 +2,10 @@ package com.wong.example;
 
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -71,7 +73,7 @@ public class Example_00279_PerfectSquares {
         return dp[n];
     }
     
-    //TODO：方法三：贪心枚举
+    //region 方法三：贪心枚举
     public int numSquares_3(int n) {
         Set<Integer> square_nums = new HashSet<>();
         for (int i = 1; i * i <= n; ++i) {
@@ -100,4 +102,39 @@ public class Example_00279_PerfectSquares {
         }
         return false;
     }
+    //endregion
+    
+    /**
+     * 方法四：贪心 + BFS（广度优先搜索）
+     */
+    public int numSquares_4(int n) {
+        List<Integer> square_nums = new ArrayList<>();
+        for (int i = 1; i * i <= n; ++i) {
+            square_nums.add(i * i);
+        }
+        
+        Set<Integer> queue = new HashSet<>();
+        queue.add(n);
+        
+        int level = 0;
+        while (queue.size() > 0) {
+            level++;
+            Set<Integer> next_queue = new HashSet<>();
+            for (Integer remainder : queue) {
+                for (Integer square : square_nums) {
+                    if (remainder.equals(square)) {
+                        return level;
+                    } else if (remainder < square) {
+                        break;
+                    } else {
+                        next_queue.add(remainder - square);
+                    }
+                }
+            }
+            queue = next_queue;
+        }
+        return level;
+    }
+    
+    //TODO：方法五：数学运算
 }
