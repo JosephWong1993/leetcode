@@ -2,6 +2,7 @@ package com.wong.example;
 
 /**
  * 231. 2的幂
+ * https://leetcode-cn.com/problems/power-of-two/
  */
 public class Example_00231_PowerOfTwo {
     /**
