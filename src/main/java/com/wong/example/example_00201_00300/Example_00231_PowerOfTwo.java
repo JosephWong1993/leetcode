@@ -1,4 +1,4 @@
-package com.wong.example;
+package com.wong.example.example_00201_00300;
 
 /**
  * 231. 2的幂

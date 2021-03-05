@@ -1,4 +1,4 @@
-package com.wong.example;
+package com.wong.example.example_00201_00300;
 
 /**
  * 300. 最长递增子序列

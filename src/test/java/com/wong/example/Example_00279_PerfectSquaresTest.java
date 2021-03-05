@@ -1,10 +1,9 @@
 package com.wong.example;
 
+import com.wong.example.example_00201_00300.Example_00279_PerfectSquares;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringJUnitConfig(locations = "classpath:ApplicationContext.xml")
 class Example_00279_PerfectSquaresTest {
