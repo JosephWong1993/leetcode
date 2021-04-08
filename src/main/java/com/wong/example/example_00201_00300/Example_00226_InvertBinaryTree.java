@@ -1,5 +1,7 @@
 package com.wong.example.example_00201_00300;
 
+import com.wong.model.TreeNode;
+
 /**
  * 226. 翻转二叉树
  * https://leetcode-cn.com/problems/invert-binary-tree/
@@ -16,26 +18,5 @@ public class Example_00226_InvertBinaryTree {
         copyNode.left = invertTree(root.right);
         copyNode.right = invertTree(root.left);
         return copyNode;
-    }
-}
-
-class TreeNode {
-    int val;
-    
-    TreeNode left;
-    
-    TreeNode right;
-    
-    TreeNode() {
-    }
-    
-    TreeNode(int val) {
-        this.val = val;
-    }
-    
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
