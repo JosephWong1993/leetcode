@@ -29,14 +29,14 @@ public class Example_00258_AddDigits {
      * 方法一：O(1)
      */
     public int addDigits_1(int num) {
-//        if (num < 10) {
-//            return num;
-//        }
-//        num = num % 9;
-//        if (num == 0) {
-//            num = 9;
-//        }
-//        return num;
-        return (num - 1) % 9 + 1;
+        if (num < 10) {
+            return num;
+        }
+        num = num % 9;
+        if (num == 0) {
+            num = 9;
+        }
+        return num;
+//        return (num - 1) % 9 + 1;
     }
 }
