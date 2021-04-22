@@ -1,4 +1,4 @@
-package com.wong.example;
+package com.wong.example.example_00301_00400;
 
 public class Example_00371_SumOfTwoIntegers {
     public int getSum(int a, int b) {
